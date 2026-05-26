@@ -21,25 +21,37 @@
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
   <button class="mobile-close" id="mobileClose"><i class="fa fa-times"></i></button>
-  <a href="#hero" onclick="closeMobile()">Inicio</a>
-  <a href="#about" onclick="closeMobile()">Sobre mí</a>
-  <a href="#services" onclick="closeMobile()">Servicios</a>
+  <a href="#hero" onclick="closeMobile()" data-i18n="nav-home">Inicio</a>
+  <a href="#about" onclick="closeMobile()" data-i18n="nav-about">Sobre mí</a>
+  <a href="#services" onclick="closeMobile()" data-i18n="nav-services">Servicios</a>
   <a href="#skills" onclick="closeMobile()">Skills</a>
-  <a href="#projects" onclick="closeMobile()">Proyectos</a>
-  <a href="#contact" onclick="closeMobile()" class="mob-cta">Contactar</a>
+  <a href="#projects" onclick="closeMobile()" data-i18n="nav-projects">Proyectos</a>
+  <a href="#contact" onclick="closeMobile()" class="mob-cta" data-i18n="nav-contact">Contactar</a>
 </div>
 
 <!-- NAVBAR -->
 <nav id="navbar">
   <a href="#hero" class="nav-logo">D<span>.</span></a>
   <ul class="nav-links">
-    <li><a href="#hero">Inicio</a></li>
-    <li><a href="#about">Sobre mí</a></li>
-    <li><a href="#services">Servicios</a></li>
+    <li><a href="#hero" data-i18n="nav-home">Inicio</a></li>
+    <li><a href="#about" data-i18n="nav-about">Sobre mí</a></li>
+    <li><a href="#services" data-i18n="nav-services">Servicios</a></li>
     <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Proyectos</a></li>
-    <li><a href="#contact" class="nav-cta">Contactar</a></li>
+    <li><a href="#projects" data-i18n="nav-projects">Proyectos</a></li>
+    <li><a href="#contact" class="nav-cta" data-i18n="nav-contact">Contactar</a></li>
   </ul>
+  <div class="lang-switcher" id="langSwitcher">
+    <button class="lang-btn" id="langBtn" aria-label="Idioma / Language">
+      <span class="lang-icon">🌐</span>
+      <span class="lang-current" id="langCurrent">ES</span>
+      <span class="lang-arrow">▾</span>
+    </button>
+    <div class="lang-dropdown" id="langDropdown">
+      <button class="lang-option active" data-lang="es">🇪🇸 Español</button>
+      <button class="lang-option" data-lang="ca">🏴 Català</button>
+      <button class="lang-option" data-lang="en">🇬🇧 English</button>
+    </div>
+  </div>
   <button class="hamburger" id="hamburger" aria-label="Menú">
     <span></span><span></span><span></span>
   </button>
@@ -53,19 +65,19 @@
   <div class="hero-glow"></div>
   <div class="hero-inner">
     <div class="hero-content">
-      <div class="hero-badge">Disponible para proyectos</div>
+      <div class="hero-badge" data-i18n="hero-badge">Disponible para proyectos</div>
       <h1 class="hero-name">
         Derek<br>
         <span class="line2">Posadas.</span>
       </h1>
       <p class="hero-role">Frontend Developer & Software Developer</p>
-      <p class="hero-desc">
+      <p class="hero-desc" data-i18n="hero-desc">
         Co-fundador de <a href="https://nuviadev.github.io" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a>.
         Apasionado por crear experiencias digitales modernas, eficientes y visualmente impactantes. Estudiante de DAM en Barcelona.
       </p>
       <div class="hero-btns">
-        <a href="#contact" class="btn btn-primary"><i class="fa fa-envelope"></i> Contactar</a>
-        <a href="#projects" class="btn btn-outline"><i class="fa fa-folder-open"></i> Ver proyectos</a>
+        <a href="#contact" class="btn btn-primary"><i class="fa fa-envelope"></i> <span data-i18n="nav-contact">Contactar</span></a>
+        <a href="#projects" class="btn btn-outline"><i class="fa fa-folder-open"></i> <span data-i18n="hero-btn-projects">Ver proyectos</span></a>
       </div>
       <div class="hero-socials">
         <a href="mailto:derekposadassaucedo@gmail.com" class="hero-social" title="Email"><i class="fa fa-envelope"></i></a>
@@ -85,11 +97,11 @@
         </div>
         <div class="hero-stat-card card1">
           <div class="stat-num">4<span>+</span></div>
-          <div class="stat-label">Proyectos activos</div>
+          <div class="stat-label" data-i18n="stat-projects">Proyectos activos</div>
         </div>
         <div class="hero-stat-card card2">
           <div class="stat-num">1<span>+</span></div>
-          <div class="stat-label">Empresa fundada</div>
+          <div class="stat-label" data-i18n="stat-company">Empresa fundada</div>
         </div>
       </div>
     </div>
@@ -102,59 +114,59 @@
      SOBRE MÍ
 ============================= -->
 <section id="about">
-  <div class="section-tag fade-up">Sobre mí</div>
-  <h2 class="section-title fade-up">Quién soy</h2>
+  <div class="section-tag fade-up" data-i18n="about-tag">Sobre mí</div>
+  <h2 class="section-title fade-up" data-i18n="about-title">Quién soy</h2>
   <div class="about-grid">
     <div class="about-text fade-up">
-      <p>
+      <p data-i18n="about-p1">
         Soy Derek Posadas Saucedo, desarrollador frontend y de software con sede en Vilanova del Camí, Barcelona.
         Co-fundador de <a href="https://nuviadev.github.io" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a>,
         una empresa creada junto a compañeros de DAM para ofrecer soluciones web modernas y personalizadas a clientes.
       </p>
-      <p>
+      <p data-i18n="about-p2">
         Actualmente cursando el Grado Superior de Desarrollo de Aplicaciones Multiplataforma (DAM),
         con una base sólida en sistemas y redes gracias a mis estudios previos de SMR.
       </p>
-      <p>
+      <p data-i18n="about-p3">
         Me apasiona la tecnología, la seguridad informática y el desarrollo de software que combina
         funcionalidad con diseño de calidad.
       </p>
       <div class="about-stats">
         <div class="about-stat">
           <div class="num">2+</div>
-          <div class="label">Años de experiencia</div>
+          <div class="label" data-i18n="stat-exp">Años de experiencia</div>
         </div>
         <div class="about-stat">
           <div class="num">4+</div>
-          <div class="label">Proyectos completados</div>
+          <div class="label" data-i18n="stat-completed">Proyectos completados</div>
         </div>
         <div class="about-stat">
           <div class="num">4</div>
-          <div class="label">Certificaciones</div>
+          <div class="label" data-i18n="stat-certs">Certificaciones</div>
         </div>
         <div class="about-stat">
           <div class="num">1</div>
-          <div class="label">Empresa cofundada</div>
+          <div class="label" data-i18n="stat-cofounded">Empresa cofundada</div>
         </div>
       </div>
     </div>
 
     <div class="fade-up">
-      <div class="section-tag" style="margin-bottom:16px;">Formación & Trayectoria</div>
+      <div class="section-tag" style="margin-bottom:16px;" data-i18n="timeline-tag">Formación & Trayectoria</div>
       <div class="timeline">
         <div class="timeline-item">
-          <div class="timeline-year">2025 – Actualidad</div>
-          <div class="timeline-title">Desarrollo de Aplicaciones Multiplataforma</div>
-          <div class="timeline-org">Grado Superior (DAM)</div>
-          <div class="timeline-desc">Formación avanzada en desarrollo de aplicaciones multiplataforma, programación orientada a objetos, bases de datos y servicios.</div>
+          <div class="timeline-year" data-i18n="tl1-year">2025 – Actualidad</div>
+          <div class="timeline-title" data-i18n="tl1-title">Desarrollo de Aplicaciones Multiplataforma</div>
+          <div class="timeline-org" data-i18n="tl1-org">Grado Superior (DAM)</div>
+          <div class="timeline-desc" data-i18n="tl1-desc">Formación avanzada en desarrollo de aplicaciones multiplataforma, programación orientada a objetos, bases de datos y servicios.</div>
         </div>
         <div class="timeline-item">
-          <div class="timeline-year">2024 – Actualidad</div>
-          <div class="timeline-title">Co-fundador & Developer</div>
+          <div class="timeline-year" data-i18n="tl2-year">2024 – Actualidad</div>
+          <div class="timeline-title" data-i18n="tl2-title">Co-fundador & Developer</div>
           <div class="timeline-org">
             <a href="https://nuviadev.github.io" target="_blank" rel="noopener">NuviaDev</a>
           </div>
-          <div class="timeline-desc">Empresa fundada con compañeros de DAM. Desarrollamos webs modernas y personalizadas para clientes con un enfoque premium.</div>
+          <div class="timeline-desc" data-i18n="tl2-desc">Empresa fundada con compañeros de DAM. Desarrollamos webs modernas y personalizadas para clientes con un enfoque premium.</div>
           <div class="timeline-tags">
             <span class="timeline-tag">HTML/CSS</span>
             <span class="timeline-tag">JavaScript</span>
@@ -163,32 +175,32 @@
         </div>
         <div class="timeline-item">
           <div class="timeline-year">Oct 2024 – Abr 2025</div>
-          <div class="timeline-title">Prácticas SMR</div>
+          <div class="timeline-title" data-i18n="tl3-title">Prácticas SMR</div>
           <div class="timeline-org">Institut Badia i Margarit</div>
-          <div class="timeline-desc">Soporte técnico, reparación y mantenimiento de equipos, configuración de sistemas y colaboración en instalación de cámaras de seguridad.</div>
+          <div class="timeline-desc" data-i18n="tl3-desc">Soporte técnico, reparación y mantenimiento de equipos, configuración de sistemas y colaboración en instalación de cámaras de seguridad.</div>
         </div>
         <div class="timeline-item">
           <div class="timeline-year">2023 – 2025</div>
-          <div class="timeline-title">Sistemas Microinformáticos y Redes</div>
-          <div class="timeline-org">SMR – Grado Medio</div>
-          <div class="timeline-desc">Base sólida en redes, sistemas operativos, seguridad y hardware informático.</div>
+          <div class="timeline-title" data-i18n="tl4-title">Sistemas Microinformáticos y Redes</div>
+          <div class="timeline-org" data-i18n="tl4-org">SMR – Grado Medio</div>
+          <div class="timeline-desc" data-i18n="tl4-desc">Base sólida en redes, sistemas operativos, seguridad y hardware informático.</div>
         </div>
       </div>
 
       <div style="margin-top:24px;">
-        <div class="section-tag" style="margin-bottom:16px;">Certificaciones</div>
+        <div class="section-tag" style="margin-bottom:16px;" data-i18n="certs-tag">Certificaciones</div>
         <div class="cert-grid">
           <div class="cert-item">
             <div class="cert-icon"><i class="fa fa-database"></i></div>
             <div>
-              <div class="cert-name">SQL desde Cero</div>
+              <div class="cert-name" data-i18n="cert1-name">SQL desde Cero</div>
               <div class="cert-by">OpenWebinars</div>
             </div>
           </div>
           <div class="cert-item">
             <div class="cert-icon"><i class="fab fa-python"></i></div>
             <div>
-              <div class="cert-name">Python desde Cero</div>
+              <div class="cert-name" data-i18n="cert2-name">Python desde Cero</div>
               <div class="cert-by">OpenWebinars</div>
             </div>
           </div>
@@ -218,35 +230,35 @@
      SERVICIOS
 ============================= -->
 <section id="services">
-  <div class="section-tag fade-up">Servicios</div>
-  <h2 class="section-title fade-up">Qué ofrezco</h2>
-  <p class="section-sub fade-up">Soluciones digitales modernas y personalizadas para cada necesidad.</p>
+  <div class="section-tag fade-up" data-i18n="services-tag">Servicios</div>
+  <h2 class="section-title fade-up" data-i18n="services-title">Qué ofrezco</h2>
+  <p class="section-sub fade-up" data-i18n="services-sub">Soluciones digitales modernas y personalizadas para cada necesidad.</p>
   <div class="services-grid">
     <div class="service-card fade-up">
       <div class="service-icon"><i class="fa fa-globe"></i></div>
-      <div class="service-title">Desarrollo Web Personalizado</div>
-      <div class="service-desc">Webs modernas, rápidas y responsivas diseñadas a medida desde <a href="https://nuviadev.github.io" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a>. Cada proyecto es único, optimizado y adaptado a los objetivos del cliente.</div>
+      <div class="service-title" data-i18n="svc1-title">Desarrollo Web Personalizado</div>
+      <div class="service-desc" data-i18n="svc1-desc">Webs modernas, rápidas y responsivas diseñadas a medida desde <a href="https://nuviadev.github.io" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a>. Cada proyecto es único, optimizado y adaptado a los objetivos del cliente.</div>
       <div class="service-tags">
-        <span class="service-tag">Diseño a medida</span>
+        <span class="service-tag" data-i18n="svc1-t1">Diseño a medida</span>
         <span class="service-tag">Responsive</span>
-        <span class="service-tag">Optimización</span>
+        <span class="service-tag" data-i18n="svc1-t3">Optimización</span>
         <span class="service-tag">SEO básico</span>
       </div>
     </div>
     <div class="service-card fade-up">
       <div class="service-icon"><i class="fa fa-desktop"></i></div>
-      <div class="service-title">Aplicaciones de Escritorio</div>
-      <div class="service-desc">Desarrollo de aplicaciones de escritorio robustas y eficientes utilizando Java y C, adaptadas a las necesidades operacionales de empresas y proyectos.</div>
+      <div class="service-title" data-i18n="svc2-title">Aplicaciones de Escritorio</div>
+      <div class="service-desc" data-i18n="svc2-desc">Desarrollo de aplicaciones de escritorio robustas y eficientes utilizando Java y C, adaptadas a las necesidades operacionales de empresas y proyectos.</div>
       <div class="service-tags">
         <span class="service-tag">Java</span>
         <span class="service-tag">C</span>
-        <span class="service-tag">Multiplataforma</span>
+        <span class="service-tag" data-i18n="svc2-t3">Multiplataforma</span>
       </div>
     </div>
     <div class="service-card fade-up">
       <div class="service-icon"><i class="fa fa-database"></i></div>
-      <div class="service-title">Gestión de Bases de Datos</div>
-      <div class="service-desc">Diseño, implementación y optimización de bases de datos relacionales y NoSQL. Desde modelado de datos hasta consultas complejas y mantenimiento.</div>
+      <div class="service-title" data-i18n="svc3-title">Gestión de Bases de Datos</div>
+      <div class="service-desc" data-i18n="svc3-desc">Diseño, implementación y optimización de bases de datos relacionales y NoSQL. Desde modelado de datos hasta consultas complejas y mantenimiento.</div>
       <div class="service-tags">
         <span class="service-tag">MySQL</span>
         <span class="service-tag">Oracle</span>
@@ -256,13 +268,13 @@
     </div>
     <div class="service-card fade-up">
       <div class="service-icon"><i class="fa fa-network-wired"></i></div>
-      <div class="service-title">Soporte Técnico & Sistemas</div>
-      <div class="service-desc">Configuración, mantenimiento y soporte de sistemas informáticos, redes y servidores. Experiencia real con entornos corporativos y educativos.</div>
+      <div class="service-title" data-i18n="svc4-title">Soporte Técnico & Sistemas</div>
+      <div class="service-desc" data-i18n="svc4-desc">Configuración, mantenimiento y soporte de sistemas informáticos, redes y servidores. Experiencia real con entornos corporativos y educativos.</div>
       <div class="service-tags">
         <span class="service-tag">Linux</span>
         <span class="service-tag">Windows</span>
-        <span class="service-tag">Redes</span>
-        <span class="service-tag">Servidores</span>
+        <span class="service-tag" data-i18n="svc4-t3">Redes</span>
+        <span class="service-tag" data-i18n="svc4-t4">Servidores</span>
       </div>
     </div>
   </div>
@@ -274,12 +286,12 @@
      SKILLS
 ============================= -->
 <section id="skills">
-  <div class="section-tag fade-up">Tecnologías</div>
-  <h2 class="section-title fade-up">Mi stack</h2>
-  <p class="section-sub fade-up">Herramientas y tecnologías con las que trabajo día a día.</p>
+  <div class="section-tag fade-up" data-i18n="skills-tag">Tecnologías</div>
+  <h2 class="section-title fade-up" data-i18n="skills-title">Mi stack</h2>
+  <p class="section-sub fade-up" data-i18n="skills-sub">Herramientas y tecnologías con las que trabajo día a día.</p>
   <div class="skills-container">
     <div class="skill-group fade-up">
-      <div class="skill-group-title"><i class="fa fa-code"></i> Lenguajes de Programación</div>
+      <div class="skill-group-title"><i class="fa fa-code"></i> <span data-i18n="skills-g1">Lenguajes de Programación</span></div>
       <div class="skill-badges">
         <span class="skill-badge">JavaScript</span>
         <span class="skill-badge">Java</span>
@@ -295,7 +307,7 @@
       </div>
     </div>
     <div class="skill-group fade-up">
-      <div class="skill-group-title"><i class="fa fa-database"></i> Bases de Datos</div>
+      <div class="skill-group-title"><i class="fa fa-database"></i> <span data-i18n="skills-g2">Bases de Datos</span></div>
       <div class="skill-badges">
         <span class="skill-badge">MySQL</span>
         <span class="skill-badge">Oracle</span>
@@ -303,20 +315,20 @@
       </div>
     </div>
     <div class="skill-group fade-up">
-      <div class="skill-group-title"><i class="fa fa-server"></i> Sistemas & Redes</div>
+      <div class="skill-group-title"><i class="fa fa-server"></i> <span data-i18n="skills-g3">Sistemas & Redes</span></div>
       <div class="skill-badges">
         <span class="skill-badge">Linux</span>
         <span class="skill-badge">Windows Server</span>
         <span class="skill-badge">FTP</span>
         <span class="skill-badge">DNS</span>
         <span class="skill-badge">DHCP</span>
-        <span class="skill-badge">Redes</span>
-        <span class="skill-badge">Seguridad informática</span>
-        <span class="skill-badge">Servidores</span>
+        <span class="skill-badge" data-i18n="skill-redes">Redes</span>
+        <span class="skill-badge" data-i18n="skill-security">Seguridad informática</span>
+        <span class="skill-badge" data-i18n="skill-servers">Servidores</span>
       </div>
     </div>
     <div class="skill-group fade-up">
-      <div class="skill-group-title"><i class="fa fa-tools"></i> Herramientas</div>
+      <div class="skill-group-title"><i class="fa fa-tools"></i> <span data-i18n="skills-g4">Herramientas</span></div>
       <div class="skill-badges">
         <span class="skill-badge">GitHub</span>
         <span class="skill-badge">Vercel</span>
@@ -332,21 +344,21 @@
      PROYECTOS
 ============================= -->
 <section id="projects">
-  <div class="section-tag fade-up">Proyectos</div>
-  <h2 class="section-title fade-up">Mi trabajo</h2>
-  <p class="section-sub fade-up">Proyectos diseñados y desarrollados con atención al detalle y calidad premium.</p>
+  <div class="section-tag fade-up" data-i18n="projects-tag">Proyectos</div>
+  <h2 class="section-title fade-up" data-i18n="projects-title">Mi trabajo</h2>
+  <p class="section-sub fade-up" data-i18n="projects-sub">Proyectos diseñados y desarrollados con atención al detalle y calidad premium.</p>
   <div class="projects-grid">
     <div class="project-card fade-up">
       <div class="project-thumb proj-t1">
         <div class="project-thumb-inner">🌐</div>
         <div class="project-overlay">
-          <a href="https://nuviadev.github.io" target="_blank" rel="noopener" class="project-overlay-btn">Ver proyecto</a>
+          <a href="https://nuviadev.github.io" target="_blank" rel="noopener" class="project-overlay-btn" data-i18n="proj-view">Ver proyecto</a>
         </div>
       </div>
       <div class="project-body">
-        <div class="project-type">Web Corporativa</div>
+        <div class="project-type" data-i18n="proj1-type">Web Corporativa</div>
         <div class="project-name">NuviaDev – Sitio Oficial</div>
-        <div class="project-desc">Web corporativa moderna para <a href="https://nuviadev.github.io" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a> con diseño minimalista oscuro, animaciones premium y secciones de servicios y contacto optimizadas.</div>
+        <div class="project-desc" data-i18n="proj1-desc">Web corporativa moderna para <a href="https://nuviadev.github.io" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a> con diseño minimalista oscuro, animaciones premium y secciones de servicios y contacto optimizadas.</div>
         <div class="project-stack">
           <span class="project-tech">HTML</span>
           <span class="project-tech">CSS</span>
@@ -359,13 +371,13 @@
       <div class="project-thumb proj-t2">
         <div class="project-thumb-inner">🛒</div>
         <div class="project-overlay">
-          <a href="#contact" class="project-overlay-btn">Ver más</a>
+          <a href="#contact" class="project-overlay-btn" data-i18n="proj-more">Ver más</a>
         </div>
       </div>
       <div class="project-body">
-        <div class="project-type">Sistema de Gestión</div>
+        <div class="project-type" data-i18n="proj2-type">Sistema de Gestión</div>
         <div class="project-name">GestorPro — Inventario</div>
-        <div class="project-desc">Aplicación web de gestión de inventario y ventas con panel de administración, reportes en tiempo real y sistema de usuarios con roles.</div>
+        <div class="project-desc" data-i18n="proj2-desc">Aplicación web de gestión de inventario y ventas con panel de administración, reportes en tiempo real y sistema de usuarios con roles.</div>
         <div class="project-stack">
           <span class="project-tech">JavaScript</span>
           <span class="project-tech">MySQL</span>
@@ -377,13 +389,13 @@
       <div class="project-thumb proj-t3">
         <div class="project-thumb-inner">☕</div>
         <div class="project-overlay">
-          <a href="#contact" class="project-overlay-btn">Ver más</a>
+          <a href="#contact" class="project-overlay-btn" data-i18n="proj-more">Ver más</a>
         </div>
       </div>
       <div class="project-body">
-        <div class="project-type">App de Escritorio</div>
+        <div class="project-type" data-i18n="proj3-type">App de Escritorio</div>
         <div class="project-name">TaskFlow — Gestor de Tareas</div>
-        <div class="project-desc">Aplicación de escritorio en Java con interfaz gráfica moderna para gestión de proyectos, tareas y equipos de trabajo con persistencia en BD.</div>
+        <div class="project-desc" data-i18n="proj3-desc">Aplicación de escritorio en Java con interfaz gráfica moderna para gestión de proyectos, tareas y equipos de trabajo con persistencia en BD.</div>
         <div class="project-stack">
           <span class="project-tech">Java</span>
           <span class="project-tech">Oracle DB</span>
@@ -395,13 +407,13 @@
       <div class="project-thumb proj-t4">
         <div class="project-thumb-inner">✨</div>
         <div class="project-overlay">
-          <a href="#contact" class="project-overlay-btn">Ver más</a>
+          <a href="#contact" class="project-overlay-btn" data-i18n="proj-more">Ver más</a>
         </div>
       </div>
       <div class="project-body">
-        <div class="project-type">Portfolio Premium</div>
-        <div class="project-name">Portfolio Personal</div>
-        <div class="project-desc">Portfolio personal con diseño premium tipo Awwwards, tema oscuro completo, animaciones suaves, glassmorphism y 100% responsive.</div>
+        <div class="project-type" data-i18n="proj4-type">Portfolio Premium</div>
+        <div class="project-name" data-i18n="proj4-name">Portfolio Personal</div>
+        <div class="project-desc" data-i18n="proj4-desc">Portfolio personal con diseño premium tipo Awwwards, tema oscuro completo, animaciones suaves, glassmorphism y 100% responsive.</div>
         <div class="project-stack">
           <span class="project-tech">HTML</span>
           <span class="project-tech">CSS3</span>
@@ -420,10 +432,10 @@
 <section id="contact">
   <div class="contact-grid">
     <div>
-      <div class="section-tag fade-up">Contacto</div>
+      <div class="section-tag fade-up" data-i18n="contact-tag">Contacto</div>
       <div class="contact-info fade-up">
-        <h3>Trabajemos<br><span style="color:var(--accent)">juntos</span></h3>
-        <p>¿Tienes un proyecto en mente? Estoy disponible para colaboraciones, proyectos freelance y nuevas oportunidades. No dudes en contactarme.</p>
+        <h3><span data-i18n="contact-h3a">Trabajemos</span><br><span style="color:var(--accent)" data-i18n="contact-h3b">juntos</span></h3>
+        <p data-i18n="contact-p">¿Tienes un proyecto en mente? Estoy disponible para colaboraciones, proyectos freelance y nuevas oportunidades. No dudes en contactarme.</p>
       </div>
       <div class="contact-links fade-up">
         <a href="mailto:derekposadassaucedo@gmail.com" class="contact-link">
@@ -461,8 +473,8 @@
         <div class="contact-link" style="cursor:default;">
           <div class="contact-link-icon"><i class="fa fa-map-marker-alt"></i></div>
           <div class="contact-link-info">
-            <div class="label">UBICACIÓN</div>
-            <div class="value">Vilanova del Camí, Barcelona 🇪🇸</div>
+            <div class="label" data-i18n="contact-loc-label">UBICACIÓN</div>
+            <div class="value" data-i18n="contact-loc-val">Vilanova del Camí, Barcelona 🇪🇸</div>
           </div>
         </div>
       </div>
@@ -470,13 +482,13 @@
     <div class="fade-up">
       <div class="contact-cta">
         <div class="contact-cta-icon"><i class="fa fa-rocket"></i></div>
-        <h4>¿Listo para empezar?</h4>
-        <p>Cuéntame tu idea y construimos algo increíble juntos. Respondo en menos de 24h.</p>
+        <h4 data-i18n="cta-title">¿Listo para empezar?</h4>
+        <p data-i18n="cta-desc">Cuéntame tu idea y construimos algo increíble juntos. Respondo en menos de 24h.</p>
         <a href="mailto:derekposadassaucedo@gmail.com" class="btn btn-primary" style="display:inline-flex; margin-bottom:16px;">
-          <i class="fa fa-paper-plane"></i> Enviar mensaje
+          <i class="fa fa-paper-plane"></i> <span data-i18n="cta-btn">Enviar mensaje</span>
         </a>
         <div style="margin-top:16px; padding-top:24px; border-top:1px solid var(--border);">
-          <div style="font-size:12px; color:var(--muted); margin-bottom:14px; letter-spacing:0.5px;">TAMBIÉN EN</div>
+          <div style="font-size:12px; color:var(--muted); margin-bottom:14px; letter-spacing:0.5px;" data-i18n="also-on">TAMBIÉN EN</div>
           <div style="display:flex; gap:10px; justify-content:center;">
             <a href="https://github.com/derekposadas" target="_blank" rel="noopener" class="footer-link"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/derek-posadas-saucedo-03b66b2b0" target="_blank" rel="noopener" class="footer-link"><i class="fab fa-linkedin-in"></i></a>
@@ -493,8 +505,8 @@
      FOOTER
 ============================= -->
 <footer>
-  <div class="footer-left">
-    © 2025 <strong>Derek Posadas Saucedo</strong> — Hecho con <span>♥</span> en Barcelona ·
+  <div class="footer-left" data-i18n="footer-text">
+    © 2025 <strong>Derek Posadas Saucedo</strong>. Diseñado y desarrollado por mí. <br>
     <a href="https://nuviadev.github.io" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none; font-weight:600;">NuviaDev</a>
   </div>
   <div class="footer-links">
