@@ -22,10 +22,15 @@ if (!isTouchDevice()) {
   }
   animateRing();
 
-  const hoverTargets = 'a, button, .skill-badge, .project-card, .service-card, .timeline-item, .cert-item, .contact-link, .about-stat';
-  document.querySelectorAll(hoverTargets).forEach(el => {
-    el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
-    el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+  // Universal hover: every element triggers cursor-hover
+  document.addEventListener('mouseover', e => {
+    const el = e.target;
+    const isInteractive = el.closest('a, button, [role="button"], .skill-badge, .project-card, .service-card, .timeline-item, .cert-item, .contact-link, .about-stat, .lang-option, .lang-btn, .hero-social, .footer-link');
+    if (isInteractive) {
+      document.body.classList.add('cursor-hover');
+    } else {
+      document.body.classList.remove('cursor-hover');
+    }
   });
 }
 
