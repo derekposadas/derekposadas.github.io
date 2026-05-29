@@ -623,26 +623,61 @@ body::before {
   position: relative;
   overflow: hidden;
   display: flex; align-items: center; justify-content: center;
+  cursor: none;
+  transition: height 0.5s cubic-bezier(0.16,1,0.3,1);
 }
 .project-thumb-inner {
   position: absolute; inset: 0;
   display: flex; align-items: center; justify-content: center;
   font-size: 64px;
-  transition: transform 0.5s cubic-bezier(0.16,1,0.3,1);
 }
-.project-card:hover .project-thumb-inner { transform: scale(1.08); }
+.project-thumb-inner img {
+  width: 100%; height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  opacity: 0;
+  transition: opacity 0.4s cubic-bezier(0.16,1,0.3,1);
+  display: block;
+}
+.project-card:hover .project-thumb-inner img {
+  opacity: 1;
+}
+.project-card:hover .proj-t1 { height: 215px; }
+.project-card:hover .proj-t3 { height: 282px; }
+.project-card:hover .proj-t4 { height: 200px; }
 .proj-t1 { background: linear-gradient(135deg, #0f1923 0%, #162032 100%); }
 .proj-t2 { background: linear-gradient(135deg, #1a1014 0%, #2a1520 100%); }
 .proj-t3 { background: linear-gradient(135deg, #0f1a13 0%, #162518 100%); }
 .proj-t4 { background: linear-gradient(135deg, #1a1700 0%, #252200 100%); }
 .project-overlay {
   position: absolute; inset: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.45);
   display: flex; align-items: center; justify-content: center;
   opacity: 0;
   transition: var(--transition);
+  cursor: none;
 }
 .project-card:hover .project-overlay { opacity: 1; }
+/* Custom cursor for project thumbs */
+.project-thumb-cursor {
+  position: fixed;
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: var(--accent);
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.25s cubic-bezier(0.16,1,0.3,1), opacity 0.2s;
+  opacity: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 700; color: #000;
+  letter-spacing: 0.5px;
+  mix-blend-mode: normal;
+}
+.project-thumb-cursor.visible {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
 .project-overlay-btn {
   background: var(--accent);
   color: var(--black);

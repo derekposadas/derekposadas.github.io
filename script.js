@@ -87,13 +87,13 @@ const translations = {
     'nav-projects': 'Proyectos',
     'nav-contact': 'Contactar',
     'hero-badge': 'Disponible para proyectos',
-    'hero-desc': 'Co-fundador de <a href="https://nuviadev.github.io" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a>. Apasionado por crear experiencias digitales modernas, eficientes y visualmente impactantes. Estudiante de DAM en Barcelona.',
+    'hero-desc': 'Co-fundador de <a href="https://nuviadev.vercel.app" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a>. Apasionado por crear experiencias digitales modernas, eficientes y visualmente impactantes. Estudiante de DAM en Barcelona.',
     'hero-btn-projects': 'Ver proyectos',
     'stat-projects': 'Proyectos activos',
     'stat-company': 'Empresa fundada',
     'about-tag': 'Sobre mí',
     'about-title': 'Quién soy',
-    'about-p1': 'Soy Derek Posadas Saucedo, desarrollador frontend y de software con sede en Vilanova del Camí, Barcelona. Co-fundador de <a href="https://nuviadev.github.io" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a>, una empresa creada junto a compañeros de DAM para ofrecer soluciones web modernas y personalizadas a clientes.',
+    'about-p1': 'Soy Derek Posadas Saucedo, desarrollador frontend y de software con sede en Vilanova del Camí, Barcelona. Co-fundador de <a href="https://nuviadev.vercel.app" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a>, una empresa creada junto a compañeros de DAM para ofrecer soluciones web modernas y personalizadas a clientes.',
     'about-p2': 'Actualmente cursando el Grado Superior de Desarrollo de Aplicaciones Multiplataforma (DAM), con una base sólida en sistemas y redes gracias a mis estudios previos de SMR.',
     'about-p3': 'Me apasiona la tecnología, la seguridad informática y el desarrollo de software que combina funcionalidad con diseño de calidad.',
     'stat-exp': 'Años de experiencia',
@@ -120,7 +120,7 @@ const translations = {
     'services-title': 'Qué ofrezco',
     'services-sub': 'Soluciones digitales modernas y personalizadas para cada necesidad.',
     'svc1-title': 'Desarrollo Web Personalizado',
-    'svc1-desc': 'Webs modernas, rápidas y responsivas diseñadas a medida desde <a href="https://nuviadev.github.io" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a>. Cada proyecto es único, optimizado y adaptado a los objetivos del cliente.',
+    'svc1-desc': 'Webs modernas, rápidas y responsivas diseñadas a medida desde <a href="https://nuviadev.vercel.app" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a>. Cada proyecto es único, optimizado y adaptado a los objetivos del cliente.',
     'svc1-t1': 'Diseño a medida',
     'svc1-t3': 'Optimización',
     'svc2-title': 'Aplicaciones de Escritorio',
@@ -148,14 +148,14 @@ const translations = {
     'proj-view': 'Ver proyecto',
     'proj-more': 'Ver más',
     'proj1-type': 'Web Corporativa',
-    'proj1-desc': 'Web corporativa moderna para <a href="https://nuviadev.github.io" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a> con diseño minimalista oscuro, animaciones premium y secciones de servicios y contacto optimizadas.',
+    'proj1-desc': 'Web corporativa moderna para <a href="https://nuviadev.vercel.app" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a> con diseño minimalista oscuro, animaciones premium y secciones de servicios y contacto optimizadas.',
     'proj2-type': 'Sistema de Gestión',
     'proj2-desc': 'Aplicación web de gestión de inventario y ventas con panel de administración, reportes en tiempo real y sistema de usuarios con roles.',
     'proj3-type': 'App de Escritorio',
     'proj3-desc': 'Aplicación de escritorio en Java con interfaz gráfica moderna para gestión de proyectos, tareas y equipos de trabajo con persistencia en BD.',
     'proj4-type': 'Portfolio Premium',
     'proj4-name': 'Portfolio Personal',
-    'proj4-desc': 'Portfolio personal con diseño premium tipo Awwwards, tema oscuro completo, animaciones suaves, glassmorphism y 100% responsive.',
+    'proj4-desc': 'Mi portfolio personal: un espacio donde me presento como desarrollador y muestro algunos de los proyectos en los que he trabajado. Diseñado para reflejar mi estilo y forma de entender el desarrollo web.',
     'contact-tag': 'Contacto',
     'contact-h3a': 'Trabajemos',
     'contact-h3b': 'juntos',
@@ -166,7 +166,7 @@ const translations = {
     'cta-desc': 'Cuéntame tu idea y construimos algo increíble juntos. Respondo en menos de 24h.',
     'cta-btn': 'Enviar mensaje',
     'also-on': 'TAMBIÉN EN',
-    'footer-text': '© 2025 <strong>Derek Posadas Saucedo</strong> — Hecho con <span>♥</span> en Barcelona · <a href="https://nuviadev.github.io" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none; font-weight:600;">NuviaDev</a>',
+    'footer-text': '© 2025 <strong>Derek Posadas Saucedo</strong> — Hecho por mí · <a href="https://nuviadev.vercel.app" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none; font-weight:600;">NuviaDev</a>',
   },
   ca: {
     'nav-home': 'Inici',
@@ -175,13 +175,13 @@ const translations = {
     'nav-projects': 'Projectes',
     'nav-contact': 'Contactar',
     'hero-badge': 'Disponible per a projectes',
-    'hero-desc': 'Co-fundador de <a href="https://nuviadev.github.io" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a>. Apassionat per crear experiències digitals modernes, eficients i visualment impactants. Estudiant de DAM a Barcelona.',
+    'hero-desc': 'Co-fundador de <a href="https://nuviadev.vercel.app" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a>. Apassionat per crear experiències digitals modernes, eficients i visualment impactants. Estudiant de DAM a Barcelona.',
     'hero-btn-projects': 'Veure projectes',
     'stat-projects': 'Projectes actius',
     'stat-company': 'Empresa fundada',
     'about-tag': 'Sobre mi',
     'about-title': 'Qui soc',
-    'about-p1': 'Soc Derek Posadas Saucedo, desenvolupador frontend i de programari amb seu a Vilanova del Camí, Barcelona. Co-fundador de <a href="https://nuviadev.github.io" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a>, una empresa creada amb companys de DAM per oferir solucions web modernes i personalitzades als clients.',
+    'about-p1': 'Soc Derek Posadas Saucedo, desenvolupador frontend i de programari amb seu a Vilanova del Camí, Barcelona. Co-fundador de <a href="https://nuviadev.vercel.app" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a>, una empresa creada amb companys de DAM per oferir solucions web modernes i personalitzades als clients.',
     'about-p2': 'Actualment cursant el Grau Superior de Desenvolupament d\'Aplicacions Multiplataforma (DAM), amb una base sòlida en sistemes i xarxes gràcies als meus estudis previs de SMR.',
     'about-p3': 'M\'apassiona la tecnologia, la seguretat informàtica i el desenvolupament de programari que combina funcionalitat amb disseny de qualitat.',
     'stat-exp': 'Anys d\'experiència',
@@ -208,7 +208,7 @@ const translations = {
     'services-title': 'Què ofereixo',
     'services-sub': 'Solucions digitals modernes i personalitzades per a cada necessitat.',
     'svc1-title': 'Desenvolupament Web Personalitzat',
-    'svc1-desc': 'Webs modernes, ràpides i responsives dissenyades a mida des de <a href="https://nuviadev.github.io" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a>. Cada projecte és únic, optimitzat i adaptat als objectius del client.',
+    'svc1-desc': 'Webs modernes, ràpides i responsives dissenyades a mida des de <a href="https://nuviadev.vercel.app" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a>. Cada projecte és únic, optimitzat i adaptat als objectius del client.',
     'svc1-t1': 'Disseny a mida',
     'svc1-t3': 'Optimització',
     'svc2-title': 'Aplicacions d\'Escriptori',
@@ -236,14 +236,14 @@ const translations = {
     'proj-view': 'Veure projecte',
     'proj-more': 'Veure més',
     'proj1-type': 'Web Corporativa',
-    'proj1-desc': 'Web corporativa moderna per a <a href="https://nuviadev.github.io" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a> amb disseny minimalista fosc, animacions premium i seccions de serveis i contacte optimitzades.',
+    'proj1-desc': 'Web corporativa moderna per a <a href="https://nuviadev.vercel.app" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a> amb disseny minimalista fosc, animacions premium i seccions de serveis i contacte optimitzades.',
     'proj2-type': 'Sistema de Gestió',
     'proj2-desc': 'Aplicació web de gestió d\'inventari i vendes amb panell d\'administració, informes en temps real i sistema d\'usuaris amb rols.',
     'proj3-type': 'App d\'Escriptori',
     'proj3-desc': 'Aplicació d\'escriptori en Java amb interfície gràfica moderna per a la gestió de projectes, tasques i equips de treball amb persistència a BD.',
     'proj4-type': 'Portfolio Premium',
     'proj4-name': 'Portfolio Personal',
-    'proj4-desc': 'Portfolio personal amb disseny premium tipus Awwwards, tema fosc complet, animacions suaus, glassmorphism i 100% responsive.',
+    'proj4-desc': 'El meu portfolio personal: un espai on em presento com a desenvolupador i mostro alguns dels projectes en els quals he treballat. Dissenyat per reflectir el meu estil i manera d\'entendre el desenvolupament web.',
     'contact-tag': 'Contacte',
     'contact-h3a': 'Treballem',
     'contact-h3b': 'junts',
@@ -254,7 +254,7 @@ const translations = {
     'cta-desc': 'Explica\'m la teva idea i construïm alguna cosa increïble junts. Responc en menys de 24h.',
     'cta-btn': 'Enviar missatge',
     'also-on': 'TAMBÉ A',
-    'footer-text': '© 2025 <strong>Derek Posadas Saucedo</strong> — Fet amb <span>♥</span> a Barcelona · <a href="https://nuviadev.github.io" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none; font-weight:600;">NuviaDev</a>',
+    'footer-text': '© 2025 <strong>Derek Posadas Saucedo</strong> — Fet per mi · <a href="https://nuviadev.vercel.app" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none; font-weight:600;">NuviaDev</a>',
   },
   en: {
     'nav-home': 'Home',
@@ -263,13 +263,13 @@ const translations = {
     'nav-projects': 'Projects',
     'nav-contact': 'Contact',
     'hero-badge': 'Available for projects',
-    'hero-desc': 'Co-founder of <a href="https://nuviadev.github.io" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a>. Passionate about building modern, efficient, and visually impactful digital experiences. DAM student in Barcelona.',
+    'hero-desc': 'Co-founder of <a href="https://nuviadev.vercel.app" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a>. Passionate about building modern, efficient, and visually impactful digital experiences. DAM student in Barcelona.',
     'hero-btn-projects': 'View projects',
     'stat-projects': 'Active projects',
     'stat-company': 'Company founded',
     'about-tag': 'About me',
     'about-title': 'Who I am',
-    'about-p1': 'I\'m Derek Posadas Saucedo, a frontend and software developer based in Vilanova del Camí, Barcelona. Co-founder of <a href="https://nuviadev.github.io" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a>, a company built alongside DAM classmates to deliver modern and tailored web solutions to clients.',
+    'about-p1': 'I\'m Derek Posadas Saucedo, a frontend and software developer based in Vilanova del Camí, Barcelona. Co-founder of <a href="https://nuviadev.vercel.app" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a>, a company built alongside DAM classmates to deliver modern and tailored web solutions to clients.',
     'about-p2': 'Currently studying for a Higher Degree in Cross-Platform Application Development (DAM), with a solid foundation in systems and networking from my previous SMR studies.',
     'about-p3': 'I\'m passionate about technology, cybersecurity, and software development that blends functionality with quality design.',
     'stat-exp': 'Years of experience',
@@ -296,7 +296,7 @@ const translations = {
     'services-title': 'What I offer',
     'services-sub': 'Modern, tailored digital solutions for every need.',
     'svc1-title': 'Custom Web Development',
-    'svc1-desc': 'Modern, fast, and responsive websites built to measure from <a href="https://nuviadev.github.io" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a>. Every project is unique, optimized, and adapted to the client\'s goals.',
+    'svc1-desc': 'Modern, fast, and responsive websites built to measure from <a href="https://nuviadev.vercel.app" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a>. Every project is unique, optimized, and adapted to the client\'s goals.',
     'svc1-t1': 'Custom design',
     'svc1-t3': 'Optimization',
     'svc2-title': 'Desktop Applications',
@@ -324,14 +324,14 @@ const translations = {
     'proj-view': 'View project',
     'proj-more': 'See more',
     'proj1-type': 'Corporate Website',
-    'proj1-desc': 'Modern corporate website for <a href="https://nuviadev.github.io" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a> with dark minimalist design, premium animations, and optimized service and contact sections.',
+    'proj1-desc': 'Modern corporate website for <a href="https://nuviadev.vercel.app" target="_blank" rel="noopener" class="nuviadev-link">NuviaDev</a> with dark minimalist design, premium animations, and optimized service and contact sections.',
     'proj2-type': 'Management System',
     'proj2-desc': 'Web-based inventory and sales management app with admin panel, real-time reports, and a role-based user system.',
     'proj3-type': 'Desktop App',
     'proj3-desc': 'Java desktop application with a modern GUI for managing projects, tasks, and teams with database persistence.',
     'proj4-type': 'Premium Portfolio',
     'proj4-name': 'Personal Portfolio',
-    'proj4-desc': 'Personal portfolio with Awwwards-style premium design, full dark theme, smooth animations, glassmorphism, and 100% responsive.',
+    'proj4-desc': 'My personal portfolio: a space where I introduce myself as a developer and showcase some of the projects I\'ve worked on. Designed to reflect my style and approach to web development.',
     'contact-tag': 'Contact',
     'contact-h3a': 'Let\'s work',
     'contact-h3b': 'together',
@@ -342,7 +342,7 @@ const translations = {
     'cta-desc': 'Tell me your idea and let\'s build something amazing together. I reply within 24h.',
     'cta-btn': 'Send message',
     'also-on': 'ALSO ON',
-    'footer-text': '© 2025 <strong>Derek Posadas Saucedo</strong> — Made with <span>♥</span> in Barcelona · <a href="https://nuviadev.github.io" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none; font-weight:600;">NuviaDev</a>',
+    'footer-text': '© 2025 <strong>Derek Posadas Saucedo</strong> — Made by me · <a href="https://nuviadev.vercel.app" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none; font-weight:600;">NuviaDev</a>',
   }
 };
 
@@ -390,3 +390,21 @@ document.querySelectorAll('.lang-option').forEach(btn => {
 
 // Init language
 applyLang(currentLang);
+
+// Custom cursor for project thumbs
+const projectCursor = document.getElementById('projectCursor');
+const projectThumbs = document.querySelectorAll('.project-thumb');
+
+document.addEventListener('mousemove', (e) => {
+  projectCursor.style.left = e.clientX + 'px';
+  projectCursor.style.top = e.clientY + 'px';
+});
+
+projectThumbs.forEach(thumb => {
+  thumb.addEventListener('mouseenter', () => {
+    projectCursor.classList.add('visible');
+  });
+  thumb.addEventListener('mouseleave', () => {
+    projectCursor.classList.remove('visible');
+  });
+});
