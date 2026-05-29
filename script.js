@@ -390,21 +390,3 @@ document.querySelectorAll('.lang-option').forEach(btn => {
 
 // Init language
 applyLang(currentLang);
-
-// Custom cursor for project thumbs
-const projectCursor = document.getElementById('projectCursor');
-const projectThumbs = document.querySelectorAll('.project-thumb');
-
-document.addEventListener('mousemove', (e) => {
-  projectCursor.style.left = e.clientX + 'px';
-  projectCursor.style.top = e.clientY + 'px';
-});
-
-projectThumbs.forEach(thumb => {
-  thumb.addEventListener('mouseenter', () => {
-    projectCursor.classList.add('visible');
-  });
-  thumb.addEventListener('mouseleave', () => {
-    projectCursor.classList.remove('visible');
-  });
-});
