@@ -934,6 +934,11 @@ footer {
   box-shadow: 0 24px 64px rgba(0,0,0,0.4);
   transition: transform 0.5s cubic-bezier(0.16,1,0.3,1), box-shadow 0.5s cubic-bezier(0.16,1,0.3,1);
 }
+.proj-img-link {
+  display: block;
+  width: 100%; height: 100%;
+  position: absolute; inset: 0;
+}
 .proj-row:hover .proj-img-wrap {
   transform: translateY(-6px);
   box-shadow: 0 40px 80px rgba(0,0,0,0.55);
